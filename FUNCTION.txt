@@ -1,0 +1,21 @@
+create definer='root' @'localhost' procedure 'curdemo'()
+begin
+declare  id int;
+declare name varchar(50);
+declare finished int default 0;
+declare cur1 cursor
+for
+select employeeid,fnamefrom employees where employeeid>170;  //query
+
+declare continue handler for not found set finished=1;      //loopcond
+open curl1;
+
+loop1: loop fetch cur1 into id,name1;    
+     if  finished=1 then leave loop1;
+     end if;
+     select id,upper(name1);
+     end loop loop1;
+     close cur1;
+     end
+
+
