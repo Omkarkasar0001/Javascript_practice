@@ -102,18 +102,88 @@ header{
 }
 
 
+.baner_container{
+   
+    width:1350px;
 
+}
 
 
 .baner_image{
-    width:1331px;
+   
     height:395.14px;
+    
+    
+}
+.baner_container img{
+    width: 100%;
+}
+.category_heading{
+    text-transform: uppercase;
+    color:#3e4152;
+    letter-spacing: 0.15em;
+    margin:50px 0 10px 30px;
+    max-height:5em;
+    font-weight:700;
+    padding-top:3px;
+    margin-top:0px;
+    margin-bottom:40px;
+    margin-left:650px;
+}
+.category_items{
+ display:flex;
+ flex-wrap:wrap;
+ justify-content: space-evenly;
+}
+.sale_item{
+    width: 250px;
 }
 
+
+
+
+
+
+.footer_container{
+    padding: 30px 0px 40px 0px;
+    background: #fafbfc;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.footer_column
+{
+    display: flex;
+    flex-direction: column;
+}
+.footer_column h3
+{
+   color: #282c3f;
+   font-size: 14px;
+   margin-bottom: 25px;
+}
+.footer_column a{
+    color: #696b79;
+    font-size: 15px;
+    text-decoration: none;
+    padding-bottom: 5px;
+    text-decoration: none;
+    
+}
+
+.copy_right
+{
+    color:#94969f;
+    text-align:end;
+    padding: 15px;
+    
+}
 /*
 For icon use google font
     justify-content: space-evenly ; it use effect from all side include left right
+    text-align:end;  it will make text at corner right position(copyright)
 14.box-sizing: border-box; which make if u make border it will add within box not outer
+128.flex-wrap:wrap;  its remove gap between two adjesent images and make 10 images adjecct their size and space accd to zoom in out
 .67 flex-grow: 1; ye search barv jitna space khali hoga usko kha jayega
 65.//Background color not text color
 21.// This make horizontally evenly space between logo nav searchbar acbar
